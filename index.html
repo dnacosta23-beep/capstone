@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floral Chat-box</title>
+    <script src="index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-pink-50 text-gray-800">
+    <header class="bg-pink-200 p-4 text-center">
+      <h1 class="text-3xl font-bold">Floral Chat-box</h1>
+    </header>
+    <main class="p-6 max-w-2xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-4">
+        Welcome to the Floral Chat-box! This is a simple chat application where
+        you can ask about different floral arrangements.
+      </h2>
+      <p class="mb-6">
+        Feel free to ask about our floral arrangements, care tips, or any other
+        floral-related questions you may have. Our chat-box is here to help you
+        find the perfect flowers for any occasion!
+      </p>
+      <output>
+        <div id="output"></div>
+      </output>
+      <section class="bg-pink-100 p-4 rounded shadow">
+        <!--Input area for user to enter a question about floral arrangements-->
+        <form id="form">
+          <label for="input" class="block mb-2 font-medium">
+            Enter your question about floral arrangements:
+            <div>
+              <textarea
+                name="input"
+                id="input"
+                cols="50"
+                rows="2"
+                class="border border-gray-300 rounded p-2 bg-pink-200"
+              ></textarea>
+            </div>
+          </label>
+          <button
+            id="submitButton"
+            type="submit"
+            class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Floral Chat-box.</p>
+    </footer>
+  </body>
+</html>
