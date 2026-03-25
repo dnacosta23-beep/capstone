@@ -7,11 +7,13 @@
     <script src="index.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-pink-50 text-gray-800">
+  <body
+    class="inset-0 bg-no-repeat bg-center bg-[url(https://images.unsplash.com/photo-1630790273483-0af2efb91632?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]"
+  >
     <header class="bg-pink-200 p-4 text-center">
       <h1 class="text-3xl font-bold">Floral Chat-box</h1>
     </header>
-    <main class="p-6 max-w-2xl mx-auto">
+    <main class="bg-pink-100 p-6 max-w-2xl mx-auto">
       <h2 class="text-2xl font-semibold mb-4">
         Welcome to the Floral Chat-box! This is a simple chat application where
         you can ask about different floral arrangements.
@@ -21,12 +23,13 @@
         floral-related questions you may have. Our chat-box is here to help you
         find the perfect flowers for any occasion!
       </p>
-      <output>
-        <div id="output"></div>
-      </output>
-      <section class="bg-pink-100 p-4 rounded shadow">
+      <section class="bg-orange-100 p-4 rounded shadow">
         <!--Input area for user to enter a question about floral arrangements-->
         <form id="form">
+          <output>
+            <div class="w-[470px] min-h-[70px] bg-pink-50 border border-gray-300 rounded p-2 " id="output"></div>
+          </output>
+
           <label for="input" class="block mb-2 font-medium">
             Enter your question about floral arrangements:
             <div>
@@ -35,7 +38,7 @@
                 id="input"
                 cols="50"
                 rows="2"
-                class="border border-gray-300 rounded p-2 bg-pink-200"
+                class="border border-gray-300 rounded p-2 bg-pink-50"
               ></textarea>
             </div>
           </label>
